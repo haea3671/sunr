@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>새해맞이 깜짝 편지</title>
+
+    <link rel="shortcut icon"
+        href="https://www.pinclipart.com/picdir/big/110-1101731_heart-black-heart-png-font-clipart.png">
+
+    <meta property="og:image"
+        content="https://cdn2.vectorstock.com/i/1000x1000/84/61/simple-happy-new-year-card-minimalistic-design-vector-18068461.jpg">
+    <meta property="og:title" content="from 김선례">
+    <meta property="og:description" content="새해를 시작하며">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+
+    <style>
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+
+        body {
+            background-color: rgb(0, 197, 0);
+        }
+
+        .envelope {
+
+            width: 500px;
+            height: 330px;
+
+            background-image: url('https://cdn.pixabay.com/photo/2013/07/13/12/30/cow-159731__340.png');
+
+            background-size: cover;
+            background-position: center;
+
+            margin: 0px auto 0px auto;
+
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            text-align: center;
+            color: white;
+            text-shadow: 5px 5px 10px black;
+            font-size: 30px;
+        }
+
+        .envelope-subtitle {
+            color: gray;
+            text-align: center;
+            margin: 150px 0px 0px 0px;
+            font-size: 30px;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .rtan {
+            background-color: white;
+
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://i.pinimg.com/originals/4a/0c/9b/4a0c9b8de6dd5ae1f56f6dda99aab7c9.gif');
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+            border-radius: 45px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-shadow: 5px 5px 10px black;
+        }
+
+        .messagebox {
+            background-color: ivory;
+            box-shadow: 0px 0px 10px 0px white;
+            width: 400px;
+            margin: auto;
+
+            color: black;
+            font-size: 20px;
+            line-height: 30px;
+
+            padding: 30px;
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        .madeby {
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            color: white;
+        }
+        @media screen and (max-width: 760px) {
+
+
+            .messagebox {
+                width: 300px;
+                padding: 20px;
+            }
+
+            .rtan {
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .envelope {
+                width: 300px;
+                height: 200px;
+                margin: 0px auto 0px auto;
+            }
+        }
+    </style>
+
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = "none";
+            document.getElementsByClassName("letter-open")[0].style.display = "block";
+        }
+        function hiddenmsg() {
+            alert('hidden message');
+            window.location.href = "https://blog.naver.com/devilnight36";
+        }
+    </script>
+</head>
+
+
+<body>
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    <div class="letter-close">
+        <h5 class="envelope-subtitle">touch me!</h5>
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg"> Let's welcome the new year! </h2>
+    </div>
+
+    <div class="letter-open">
+        <div class="rtan" onclick="hiddenmsg()"> </div>
+        <h1>2021년 새해가 밝았습니다!</h1>
+        <div class="messagebox">
+            길을 잃으면 길이 찾아오고,<br />
+            길을 걸으면 길이 시작됩니다.<br />
+            우리 모두 2021년<br />
+            힘찬 발걸음으로 새해를 맞이 합시다!<br />
+            <p class="from"> 새해를 맞아, 김선례</p>
+        </div>
+        <h5 class="madeby"> made by 안선생 </h5>
+    </div>
+
+</body>
+
+</html>
